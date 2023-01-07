@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Seymour+One&family=Source+Code+Pro:ital,wght@0,400;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Passions+Conflict&family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-width: 100vw;
+    max-height: 100vh;
+}
+.main-page{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(141, 214, 248);
+    padding: 0;
+    margin: 0;
+}
+
+.main-page video{
+    object-fit: fill;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.tell-date-and-time,
+.tell-weather{
+    z-index: 2;
+    justify-content: space-between;
+    width: 45vw;
+    margin: 30px;
+    margin-left: 35px;
+}
+
+
+
+.tell-date,
+.tell-time,
+.tell-weather{
+    border-radius: 16px;
+    background: rgba(244, 248, 244, 0.318)
+}
+
+.tell-date,
+.tell-time{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 47.7%;
+    margin-bottom: 30px;
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Seymour One', sans-serif;
+    z-index: 0;
+    opacity: 1;
+    
+}
+
+#input{
+    z-index: 1;
+    margin-left: 2.5%;
+    width: 92%;
+    font-size: 20px;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    opacity: 0.5;
+    font-family: 'Source Code Pro', monospace;
+    border: none;
+}
+
+#search{
+    border: none;
+    z-index: 3;
+    margin-left: -45px;
+    margin-top: 5px;
+    height: 40px;
+    width: 40px;
+    background: none;
+
+}
+
+#search img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 3;
+}
+
+#input:focus, #search img{
+    opacity: 1;
+}
+
+form{
+    display:flex;
+    margin-top: 20px;
+}
+
+.weather-info{
+    width: 100%;
+    list-style: none;
+    padding: 5px;
+    display: flex;
+    opacity: 1;
+    color: black;
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+    
+}
+
+.weather-info h5{
+    width: 50%;
+    margin-left: 100px;
+}
+
+.weather-info span{
+    width: 50%;
+    padding-left: 100px;
+}
+
+#weather_image{
+    margin-left: 10%;
+    height: 200px;
+    display: flex;
+}
+
+.det{
+    display: flex;
+    flex-direction: row;
+}
+
+#temp2{
+    font-size: 120px;
+}
+
+.side-box{
+    margin-left: -30px;
+    margin-top: -15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-box h4{
+    width: 100%;
+    margin-top: -10px;
+    margin-left: 26%;
+    font-family: 'Michroma', sans-serif;
+}
+
+.h5{
+    width: calc((100%)/3);
+    text-align: center;
+    font-family: 'Michroma', sans-serif;
+}
+
+.three-of-them{
+    margin-top: -30px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.three{
+    width: calc((100%)/3);
+    margin-left: -80px;
+    margin-right: 50px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    color: white;
+}
+
+.three span{
+    font-size: 35px;
+}
+
+.sub{
+    font-size: 10px;
+}
+
+#cityname{
+    text-transform: capitalize;
+}
+
+.curr_day{
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Seymour One', sans-serif;
+
+}
+
+#curr_date{
+    color: white;
+    margin-top: -40px;
+    font-size: 180px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Bakbak One', cursive;
+}
+
+#curr_month_year{
+    margin-top: -40px;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Bakbak One', cursive;
+}
+
+.time{
+    margin-top: 60px;
+    font-size: 100px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#something{
+    margin: 0px 30px;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Passions Conflict', cursive;
+
+}

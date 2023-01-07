@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Michroma&family=Seymour+One&family=Source+Code+Pro:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Passions+Conflict&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="main-page">
+        <video id="background_video" loop autoplay muted></video>
+        <div class="tell-date-and-time">
+            <div class="tell-time">
+                <h1 class ="time"><span id="time"></span></h1>
+                <span id="something"></span>
+            </div>
+            <div class="tell-date">
+                    <h1 class ="curr_day"><span id="curr_day"></span></h1>
+                    <span id="curr_date"></span>
+                    <span id="curr_month_year"></span>
+            </div>
+        </div>
+        <div class="tell-weather">
+                <h1 class="heading">Weather Of <span id="cityname"></span></h1>
+                <form action="">
+                    <input type="text" placeholder="Enter Name Of City" id="input">
+                    <button title="search" id="search" type = submit>
+                        <img src="./static/search.png" alt="search btn">
+                    </button>
+                </form>
+                <ul>
+                    <li class="weather-info det">
+                        <img id="weather_image" alt="">
+                        <div class="side-box">
+                            <span id="temp2"></span>
+                            <h4>TEMPERATURE</h4>
+                        </div>                            
+                    </li>
+                    <li class="weather-info three-of-them">
+                            <div class="three">
+                            
+                                <h5 class="h5">HUMIDITY</h5>
+                                <span id="humidity"></span>
+                            </div>
+                            <div class="three">
+                                <h5 class="h5">MAXIMUM TEMPERATURE</h5>
+                                <span id="max_temp"></span>
+                            </div>
+                            <div class="three">
+                                <h5 class="h5">MINIMUM TEMPERATURE</h5>
+                                <span id="min_temp"></span>
+                            </div>
+                    </li>
+
+                    <li class="weather-info">
+                        <h5>WIND SPEED</h5>
+                        <span id="wind_speed"></span>
+                    </li>
+                    
+                    <li class="weather-info">
+                        <h5>CLOUD PCT</h5>
+                        <span id="cloud_pct"></span>
+                    </li>
+                    <li class="weather-info">
+                        <h5>FEELS LIKE</h5>
+                        <span id="feels_like"></span>
+                    </li>
+                    
+                    <li class="weather-info">
+                        <h5>SUNRISE</h5>
+                        <span id="sunrise"></span>
+                    </li>
+                    <li class="weather-info">
+                        <h5>SUNSET</h5>
+                        <span id="sunset"></span>
+                    </li>
+                    <li class="weather-info">
+                        <h5>TEMPERATURE</h5>
+                        <span id="temp"></span>
+                    </li>
+                    <li class="weather-info">
+                        <h5>WIND DEGREES</h5>
+                        <span id="wind_degrees"></span>
+                    </li>
+                </ul>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
