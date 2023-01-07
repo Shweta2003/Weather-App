@@ -4,11 +4,21 @@
 
 ## This app tells the date, time and weather details of any city in the world.
 
+## API used
+
+world-time-by-api-ninjas.p.rapidapi.com
+
+AND
+
+weather-by-api-ninjas.p.rapidapi.com
+
 ## How to Use?
 
 Enter name of any city or country and the respective date, time and weather will be displayed on screen.
 
 The background and symbols depend on the time and weather respectively and changes accordingly.
+
+The Background is a video so let it load and ensure good internet connectivity for proper display.
 
 
 ## Images of Website
@@ -32,3 +42,4 @@ The background and symbols depend on the time and weather respectively and chang
 
 ### I am Providing a direct link to this website I created.
 
+https://weather-app-shweta2003.vercel.app/
